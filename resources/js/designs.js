@@ -1,5 +1,10 @@
 const form = document.querySelector('#sizePicker');
 const canvas = document.querySelector('#pixelCanvas');
+const reset = document.querySelector('#reset')
+
+function resetGrid(){
+    canvas.innerHTML = "";
+}
 
 // to color a grid
 function toColor(e) {
@@ -17,7 +22,7 @@ function makeGrid(event) {
 
     const width = document.querySelector('#width').value;
     const height = document.querySelector('#height').value;
-    canvas.innerHTML = "";
+    canvas.innerHTML = ""; // prevents the grid from reproducing
 
         for (var i = 1; i <= width; i++) {
         const newRow = document.createElement('tr');
@@ -35,12 +40,4 @@ function makeGrid(event) {
 };
 
 form.addEventListener('submit', makeGrid);
-
-
-
-
-
-
-
-
-
+reset.addEventListener('click', resetGrid);
