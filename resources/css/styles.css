@@ -4,25 +4,21 @@ body {
     color: rgb(77, 71, 71);
     background-color: rgba(229, 229, 229, 0);
 
+
 }
 
-h1 {
+h2 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
 
 }
 
-h2 {
+h3 {
     margin: 1em 0 0.25em;
 
 }
 
-h2:first-of-type {
-    margin-top: 0.5em;
-    padding-bottom: 10px;
-
-}
 
 table,
 tr,
@@ -56,28 +52,36 @@ input[type=number] {
 
 ul {
     list-style-type: none;
-
 }
 
-li {
-    display:inline;
-    padding: 0 20px;
-
-}
 
 .number {
     border: solid 2px #a7a49d;
     border-radius: 50%;
     display:inline-block;
-    height: 20px;
-    width:20px;
+    height: 25px;
+    width:25px;
     text-align: center;
-    padding: 4px;
+    padding-bottom: 5px;
     margin-right: 3px;
 
 }
 
-form {
-    padding:1%;
+
+.medium-size {
+    font-size: 150%;
 
 }
+
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+}
+
+.linkedin {color: #0077b5}
+.fb {color: #3b5998; }
+.github {color: #00405d }
+.twitter {color: #55acee}
