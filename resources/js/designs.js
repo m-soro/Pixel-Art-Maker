@@ -2,10 +2,10 @@ const form = document.querySelector('#sizePicker');
 const canvas = document.querySelector('#pixelCanvas');
 const reset = document.querySelector('#reset')
 
+
 function resetGrid(){
     canvas.innerHTML = "";
 }
-
 // to color a grid
 function toColor(e) {
     const pickedColor = document.querySelector('#colorPicker').value;
@@ -40,4 +40,5 @@ function makeGrid(event) {
 };
 
 form.addEventListener('submit', makeGrid);
+form.addEventListener('submit', function() {canvas.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-.1s')});
 reset.addEventListener('click', resetGrid);
